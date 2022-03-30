@@ -50,11 +50,11 @@
 			<url>http://localhost:8081/repository/EsempioTest_Rel/</url>
 			
 		</repository>
-		<snapshotrepository>
+		<snapshotRepository>
 			<id>deployment</id>
 			<name>Internal Snapshot relase</name>
 			<url>http://localhost:8081/repository/EsempioTest_Snap/</url>
-		</snapshotrepository>
+		</snapshotRepository>
 	</distributionManagement>
 	<build>
 		<plugins>
