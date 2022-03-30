@@ -43,7 +43,19 @@
 			<version>1.2.17</version>
 		</dependency>
 	</dependencies>
-
+	<distributionManagement>
+		<repository>
+			<id>deployment</id>
+			<name>Internal relase</name>
+			<url>http://localhost:8081/repository/EsempioTest_Rel/</url>
+			
+		</repository>
+		<snapshotrepository>
+			<id>deployment</id>
+			<name>Internal Snapshot relase</name>
+			<url>http://localhost:8081/repository/EsempioTest_Snap/</url>
+		</snapshotrepository>
+	</distributionManagement>
 	<build>
 		<plugins>
 			<plugin>
@@ -52,7 +64,7 @@
 			</plugin>
 			<plugin>
             <artifactId>maven-compiler-plugin</artifactId>
- <version>3.1</version>
+ 		<version>3.1</version>
              <configuration>
                 <fork>true</fork>
                 <executable>C:\Program Files\Java\jdk1.8.0_251\bin\javac.exe</executable>
