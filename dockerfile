@@ -8,5 +8,4 @@ FROM openjdk:8-jre-alpine
 COPY --from=build /usr/src/demo/target/demo-0.0.1-SNAPSHOT.jar /usr/demo/demo-0.0.1-SNAPSHOT.jar  
 
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "usr/demo/demo-0.0.1-SNAPSHOT.jar "]
-CMD ["-start"]
+ENTRYPOINT ["java", "-jar", "usr/demo/demo-0.0.1-SNAPSHOT.jar"]
