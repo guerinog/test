@@ -9,7 +9,7 @@ pipeline {
     stage('Clonazione Git') {
       steps {
             echo "Clonazione Git"
-            git branch: 'main', url: 'https://github.com/guerinog/test.git'
+            git branch: 'main', credentialsId: 'f8db74b3-0315-4066-a99a-8bffccc42b81', url: 'https://github.com/guerinog/test.git'
       }
     }
   
